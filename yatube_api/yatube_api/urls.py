@@ -7,7 +7,6 @@ urlpatterns = [
     path('api/', include('api.urls')),
     path(
         'redoc/',
-        # его не видит в шаблонах, в чем может бать проблема?
         TemplateView.as_view(template_name='api/redoc.html'),
         name='redoc'
     ),
