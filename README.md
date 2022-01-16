@@ -4,30 +4,46 @@
 
 Clone repository and change to it on the command line:
 
-`git clone https://github.com/yandex-praktikum/kittygram.git`
+```
+git clone https://github.com/yandex-praktikum/kittygram.git
+```
 
-`cd kittygram`
+```
+cd kittygram
+```
 
 
 Create and activate virtual environment:
 
-`python3 -m venv env`
+```
+python3 -m venv env
+```
 
-`source env/bin/activate`
+```
+source env/bin/activate
+```
 
 
 Install dependencies from a file requirements.txt:
 
-`python3 -m pip install --upgrade pip`
+```
+python3 -m pip install --upgrade pip
+```
 
-`pip install -r requirements.txt`
+```
+pip install -r requirements.txt
+```
 
 
 Make migrations:
 
-`python3 manage.py migrate`
+```
+python3 manage.py migrate
+```
 
 
 Start the project:
 
-`python3 manage.py runserver`
+```
+python3 manage.py runserver
+```
