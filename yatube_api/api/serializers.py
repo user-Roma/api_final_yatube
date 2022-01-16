@@ -51,10 +51,7 @@ class FollowSerializer(serializers.ModelSerializer):
             )
         ]
 
-    def create(self, validated_data):
-        """Validate if the user not an author."""
-        user = validated_data.get('user')
-        if user == validated_data.get('following'):
+    def validate(self, data):
+        if self.context.get('request').user == data['following']:
             raise validators.ValidationError('LOL')
-        follow = Follow.objects.create(**validated_data)
-        return follow
+        return data
