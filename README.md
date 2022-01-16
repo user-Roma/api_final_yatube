@@ -5,7 +5,7 @@
 Clone repository and change to it on the command line:
 
 ```
-git clone https://github.com/yandex-praktikum/kittygram.git
+git clone git@github.com:user-Roma/api_final_yatube.git
 ```
 
 ```
